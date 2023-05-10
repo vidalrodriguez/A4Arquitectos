@@ -1,0 +1,158 @@
+CRITICAL - 2023-04-28 00:25:10 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Proyecto.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 00:26:59 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Proyecto.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 00:27:57 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Proyecto.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 00:28:07 --> Call to a member function save() on null
+in APPPATH\Controllers\Proyecto.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 00:29:00 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Proyecto.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 00:29:03 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Proyecto.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-28 00:29:25 --> mysqli_sql_exception: Unknown column 'proyectos.deleted_at' in 'where clause' in C:\laragon\www\A4Arquitectos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\A4Arquitectos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\A4Arquitectos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\A4Arquitectos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\A4Arquitectos\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\A4Arquitectos\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\A4Arquitectos\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\A4Arquitectos\app\Controllers\Proyecto.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(934): App\Controllers\Proyecto->index()
+#8 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+#9 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\A4Arquitectos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-28 00:29:25 --> Unknown column 'proyectos.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `proyectos`
+WHERE `proyectos`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `proyectos`
+WHERE `proyectos`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `proyectos`
+WHERE `proyectos`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `proyectos`
+WHERE `proyectos`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Proyecto.php(14): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-28 00:30:16 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\A4Arquitectos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\A4Arquitectos\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\A4Arquitectos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\A4Arquitectos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\A4Arquitectos\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\A4Arquitectos\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\A4Arquitectos\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\A4Arquitectos\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\A4Arquitectos\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\A4Arquitectos\app\Controllers\Proyecto.php(31): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(934): App\Controllers\Proyecto->create()
+#10 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+#11 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\A4Arquitectos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-04-28 00:30:16 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `proyectos` (`nombre`, `descripcion`, `ubicacion`, `id_cliente`, `created_at`, `updated_at`) VALUES (\'fabs\', \'Es una casa urbana\', \'Lon:12.12,Lat:123\', \'1\', \'2023-04-28 00:30:16\', \'2023-04-28 00:30:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `proyectos` (`nombre`, `descripcion`, `ubicacion`, `id_cliente`, `created_at`, `updated_at`) VALUES (\'fabs\', \'Es una casa urbana\', \'Lon:12.12,Lat:123\', \'1\', \'2023-04-28 00:30:16\', \'2023-04-28 00:30:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `proyectos` (`nombre`, `descripcion`, `ubicacion`, `id_cliente`, `created_at`, `updated_at`) VALUES (\'fabs\', \'Es una casa urbana\', \'Lon:12.12,Lat:123\', \'1\', \'2023-04-28 00:30:16\', \'2023-04-28 00:30:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `proyectos` (`nombre`, `descripcion`, `ubicacion`, `id_cliente`, `created_at`, `updated_at`) VALUES (:nombre:, :descripcion:, :ubicacion:, :id_cliente:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Proyecto.php(31): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 00:38:18 --> Undefined index: nombre
+in APPPATH\Controllers\Proyecto.php on line 46.
+ 1 APPPATH\Controllers\Proyecto.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'C:\\laragon\\www\\A4Arquitectos\\app\\Controllers\\Proyecto.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 00:38:39 --> Undefined index: nombre
+in APPPATH\Controllers\Proyecto.php on line 46.
+ 1 APPPATH\Controllers\Proyecto.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'C:\\laragon\\www\\A4Arquitectos\\app\\Controllers\\Proyecto.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 00:40:49 --> Undefined index: nombre
+in APPPATH\Controllers\Proyecto.php on line 46.
+ 1 APPPATH\Controllers\Proyecto.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nombre', 'C:\\laragon\\www\\A4Arquitectos\\app\\Controllers\\Proyecto.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proyecto->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proyecto))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-28 00:47:02 --> mysqli_sql_exception: Unknown column 'evidencias.deleted_at' in 'where clause' in C:\laragon\www\A4Arquitectos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\A4Arquitectos\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\A4Arquitectos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\A4Arquitectos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\A4Arquitectos\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\A4Arquitectos\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\A4Arquitectos\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\A4Arquitectos\app\Controllers\Evidencia.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(934): App\Controllers\Evidencia->index()
+#8 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evidencia))
+#9 C:\laragon\www\A4Arquitectos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\A4Arquitectos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-28 00:47:02 --> Unknown column 'evidencias.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `evidencias`
+WHERE `evidencias`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `evidencias`
+WHERE `evidencias`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `evidencias`
+WHERE `evidencias`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `evidencias`
+WHERE `evidencias`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Evidencia.php(14): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Evidencia->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evidencia))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
